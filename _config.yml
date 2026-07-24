@@ -11,20 +11,12 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 
-include:
-  - _pages
-
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-
-collections:
-  pages:
-    output: true
-    permalink: /:path/
 
 defaults:
   - scope:
@@ -52,6 +44,15 @@ sass:
   style: compressed
 
 exclude:
+  - _drafts
+  - _pages
+  - _portfolio
+  - _posts
+  - _publications
+  - _talks
+  - _teaching
+  - files
+  - images
   - Dockerfile
   - Gemfile
   - LICENSE
